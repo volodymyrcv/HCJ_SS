@@ -12,7 +12,7 @@
         <h2>Заняття 1</h2>
         <ul>
             <li>HTML (Hyper Text Markup Language)</li>
-            <li>CSS (Cascading Style StyleSheets)</li>
+            <li>CSS (Cascading Style Sheets)</li>
             <li>JavaScript - скриптова мова програмування</li>
             <li><strong>Front-end</strong> (HTML, CSS, JS <em>+ основи Back-end</em>) - <big>візуальна частина</big></li>
             <li>Back-end (PHP, .NET, Python, Ruby, Java... + основи Front-end) - <small>серверна частина</small></li>
@@ -34,5 +34,17 @@
             <img src="https://pbs.twimg.com/profile_images/495211744633950209/CvjNepWX.png" alt="Хмара 9" style="width:100px">
             <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png" alt="HTML5" style="width:100px">
         </figure>
+        <canvas id="svg" style="width:260;height:280">Ваш браузер не підтримує малювання</canvas>
+        <script>window.onload = function () {
+            var canvas = document.getElementById('svg');
+            if(сanvas && сanvas.getContext) {
+            var svg = canvas.getContext('2d');
+            svg.strokeStyle="#F0F"; svg.fillStyle="#0F0";
+            svg.BeginPath(); svg.lineTo(100,10);
+            svg.lineTo(40, 180); svg.lineTo(190,60); svg.lineTo(10,60); svg.lineTo(160,180);
+            svg.closePath(); svg.stroke(); svg.fill();
+            window.alert("Намальовано");
+            }
+            else window.alert("Не отримав контекс малювання");}</script>
     </body>
 </html>
