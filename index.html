@@ -36,9 +36,9 @@
         </figure>
         <canvas id="svg" style="width:260;height:280">Ваш браузер не підтримує малювання</canvas>
         <script>window.onload = function () {
-            var canvas = document.getElementById('svg');
-            if(сanvas && сanvas.getContext) {
-            var svg = canvas.getContext('2d');
+            var canv = document.getElementById('svg');
+            if(сanv && сanv.getContext) {
+            var svg = canv.getContext('2d');
             svg.strokeStyle="#F0F"; svg.fillStyle="#0F0";
             svg.BeginPath(); svg.lineTo(100,10);
             svg.lineTo(40, 180); svg.lineTo(190,60); svg.lineTo(10,60); svg.lineTo(160,180);
